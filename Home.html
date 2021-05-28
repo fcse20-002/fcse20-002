@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: blue;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: black;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Paris</h1>
+  <p>Cruise on a breathe taking journey to the ever busy streets of Paris</p>
+  <img class="img-background" src="img/background.jpg" alt="background" style="width: 600px;
+  <div class="img-background"></div>
+</div>
+
+<div class="topnav">
+  <a href="About us.html">About us</a></br> 
+  <a href="Lifestyle.html">Lifestyle</a>  
+  <a href="Events.html">Events</a>  
+  <a href="Connect with us.html">Connect with us</a></br>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>THE CITY OF LOVE</h2>
+      <h5>Relaxing Views</h5>
+      <img class="img-boulevard" src="img/boulevard.jpg" alt="boulevard"> 
+      <p>Boulevards of Paris are boulevards which form an essential component of the urban environment of Paris. The boulevards were built in several phases as part of a central government initiative to improve infrastructure, but Parisians associate them with strolling and leisurely enjoyment. Feel enchanted as you drive through beautiful spacious boulevards of many lights as they bring a sensation of heaven on earth. Fall in love again and again to the atmosphere that brings about peace of mind. </p>
+    </div>
+    <div class="card">
+      <h2>THINGS TO DO</h2>
+      <h5>Fun filled Beauty</h5>
+      <img class="img-disney" src="img/disney.jpg" alt="disney"> style="width: 300px;">
+      <p>Popular city that never dissapoints its people with its Fashion, Gastronomy, Culture.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Attraction</h2>
+      <img class="img-attractions" src="img/attractions.jpg" alt="attractions">
+
+    </div>
+    <div class="card">
+      <h3>Popular Posts</h3>
+      <img class="img-image1" src="img/image1.jpg" alt="image1">
+      <img class="img-image2" src="img/image2.jpg" alt="image2"><br>
+      <img class="img-image3" src="img/image3.jpg" alt="image3"><br>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+   <figure align="right">
+        <img class="img-Paris.png" src="img/Paris.png" alt="Join The Cruise To The City Of Love"><width=200"height="100">
+        </figure>
+</div>
+
+</body>
+</html>
